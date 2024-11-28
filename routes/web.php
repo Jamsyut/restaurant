@@ -12,6 +12,7 @@ Route::get('/', function () {
 
 
 
+
 // Rute untuk admin
 Route::middleware(['auth', RoleMiddleware::class . ':admin'])->group(function () {
     Route::get('/admin', function () {
@@ -45,3 +46,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/admin1', function () {
+    return view('admin.layouts.app');
+});
