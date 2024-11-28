@@ -32,14 +32,18 @@
 </head>
 
 <body>
-    @include('admin.layouts.sidebar')
+    @include('layouts.admin_landing.sidebar')
+    
 
     <div class="container-fluid position-relative bg-white d-flex p-0">
         <!-- Main content -->
         @yield('content')
     </div>
 
-    @include('admin.layouts.footer')
+    
+    @include('layouts.admin_landing.footer')
+
+    
 
     <!-- JavaScript Libraries -->
     <script src="{{ asset('asset/https://code.jquery.com/jquery-3.4.1.min.js') }}"></script>
