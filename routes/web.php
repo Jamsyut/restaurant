@@ -54,3 +54,15 @@ Route::get('/admin1', function () {
 Route::get('/landing', function () {
     return view('layouts.landing_page.app');
 });
+
+Route::get('/menu', function () {
+    return view('pages.user.menu.index');
+});
+
+Route::get('/profil', function () {
+    return view('pages.user.profile.index');
+});
+
+Route::get('/contact', function () {
+    return view('pages.user.contact.index');
+});
