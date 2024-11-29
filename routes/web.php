@@ -50,3 +50,7 @@ require __DIR__.'/auth.php';
 Route::get('/admin1', function () {
     return view('layouts.admin_landing.app');
 });
+
+Route::get('/landing', function () {
+    return view('layouts.landing_page.app');
+});
