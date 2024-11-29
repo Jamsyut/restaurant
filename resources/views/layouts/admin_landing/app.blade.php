@@ -32,17 +32,17 @@
 </head>
 
 <body>
-    @include('layouts.admin_landing.sidebar')
-    
-
     <div class="container-fluid position-relative bg-white d-flex p-0">
-        <!-- Main content -->
-        @yield('content')
-    </div>
-
+        <!-- Sidebar -->
+        @include('layouts.admin_landing.sidebar')
     
-    @include('layouts.admin_landing.footer')
-
+        <!-- Main Content -->
+        <div class="content">
+            @yield('content')
+        </div>
+    </div>
+    
+    
     
 
     <!-- JavaScript Libraries -->
