@@ -21,3 +21,4 @@ class MenuController extends Controller
         return view('admin.menu.edit');
     }
 }
+
