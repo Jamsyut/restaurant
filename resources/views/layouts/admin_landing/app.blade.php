@@ -32,15 +32,19 @@
 </head>
 
 <body>
-    <div class="container-fluid position-relative bg-white d-flex p-0">
-        <!-- Sidebar -->
+
+        <!-- Topbar -->
         @include('layouts.admin_landing.sidebar')
+        @include('layouts.admin_landing.topbar')
+    
+        <!-- Sidebar -->
+        @yield('content')
     
         <!-- Main Content -->
-        <div class="content">
-            @yield('content')
-        </div>
-    </div>
+
+
+
+    
     
     
     
