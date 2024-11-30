@@ -1,4 +1,3 @@
-
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
@@ -11,14 +10,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="/dashboard" class="nav-item nav-link active">Home</a>
-                        <a href="/menu" class="nav-item nav-link">Menu</a>
-                        <a href="/profil" class="nav-item nav-link">Profil</a>
-                        <a href="service.html" class="nav-item nav-link">Reservasi</a>
-                        <a href="/contact" class="nav-item nav-link">Contact</a>
+                        <a href="/dashboard" class="nav-item nav-link {{ request()->is('dashboard') ? 'active' : '' }}">Home</a>
+                        <a href="/menu" class="nav-item nav-link {{ request()->is('menu') ? 'active' : '' }}">Menu</a>
+                        <a href="/profil" class="nav-item nav-link {{ request()->is('profil') ? 'active' : '' }}">Profil</a>
+                        <a href="service.html" class="nav-item nav-link {{ request()->is('service.html') ? 'active' : '' }}">Reservasi</a>
+                        <a href="/contact" class="nav-item nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
                     </div>
                     <a href="" class="btn btn-primary py-2 px-4">Daftar</a>
-                </div>
+                </div>                
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
